@@ -1,0 +1,160 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+button {
+  cursor: pointer;
+}
+body {
+  font-family: Nunito Sans, Sans-Serif;
+  background-color: #000;
+}
+img {
+  display: inline-block;
+  /* max-width: 100%; */
+  height: auto;
+  vertical-align: middle;
+}
+
+.container {
+    max-width: 1171px;
+    margin: 0 auto;
+}
+.slider {
+  position: relative;
+}
+.slide {
+  /* position: relative; */
+  display: flex;
+  column-gap: 50px;
+  opacity: 0;
+  transition: opacity 800ms ease;
+  visibility: hidden;
+  display: none;
+}
+.slide.active {
+  opacity: 1;
+  visibility: visible;
+  display: flex;
+}
+
+.slider__tabs {
+  font-family: 'Yeseva One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 136%;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.3);
+  display: flex;
+  justify-content: end;
+}
+.slider__tabs p {
+  margin-right: 60px;
+  cursor: pointer;
+}
+.slider__tabs-na {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+.slider__tab.active {
+  border-bottom: 1px solid #e3b873;
+  padding-bottom: 6px;
+  margin-bottom: 47px;
+  color: #E3B873;
+}
+.completed-projects {
+    color: #fff;
+    padding: 107px 0 123px 0;
+  }
+  .completed-projects-container {
+    position: relative;
+  }
+
+  .completed-projects__text h2 {
+    font-family: "Yeseva One";
+    font-size: 27px;
+    line-height: 137%;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    color: #e3b873;
+    margin-bottom: 34px;
+    position: relative;
+  }
+  .completed-projects__text h2::after {
+    content: '';
+    position: absolute;
+    top: 52px;
+    left: 161px;
+    width: 92px;
+    height: 1px;
+    background: #E3B873;
+  }
+  .completed-projects__text > p {
+    font-size: 14px;
+    line-height: 193%;
+    margin-bottom: 42px;
+  }
+  .completed-projects__info {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 34px;
+  }
+  .item-completed-projects {
+    flex: 0 0 50%;
+  }
+  .item-completed-projects h4 {
+    font-family: "Yeseva One";
+    font-size: 18px;
+    line-height: 139%;
+    text-transform: uppercase;
+    color: #e3b873;
+    margin-bottom: 9px;
+  }
+  .item-completed-projects p {
+    font-size: 13px;
+    line-height: 162%;
+  }
+
+  .slider__dots {
+    display: flex;
+    justify-content: center;
+    column-gap: 17.5px;
+    position: absolute;
+    left: 70px;
+    bottom: 3px;
+  }
+  .slider__dots-item {
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.4s ease;
+  }
+  .slider__dots-item:hover,
+  .slider__dots-item.active {
+    background: #fff;
+  }
+
+  .slider__arrows {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    column-gap: 122px;
+  }
+  .slider__arrow-na {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .prev, .next {
+    background: transparent;
+    border: none;
+  }
+
